@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- meta tags are not necessary here, but having them always is a good practice -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- title -->
+    <title>Ping Pong</title>
+    <!-- some css styles -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Trebuchet MS', sans-serif;
+        
+      }
+      .hero-image {
+        background-image: url("../assets/arcade_background.png");
+        background-color: #cccccc;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      canvas {
+          padding-left: 0;
+          padding-right: 0;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          width: 800px;
+      }
+      #pongTitle{
+        color: #FFF;
+        padding: 4.5vh;
+        text-align: center;
+      }
+      #homeButton{
+        color:#000;
+        padding-left: 0;
+          padding-right: 0;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          width: 10vh;
+          margin-top: 2vh;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="hero-image">
+<h1 id="pongTitle">PONG by Joel Sahli</h1><br>
+    <!-- our "canvas" where we draw things-->
+    <canvas id="canvas" width="600" height="400"></canvas>
+    <div>
+      <a id="homeButton" href="../index.html" class="btn btn-light">Home</a>
+  </div>
+  </div>
+    <!-- link to script.js -->
+    <script type="text/javascript" src="../js/script.js"></script>
+
+ 
+  </body>
+</html>
